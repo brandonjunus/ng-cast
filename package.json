@@ -6,7 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
+    "start": "live-server",
     "test": "karma start",
+    "dev": "npm run start & npm run test",
     "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
   },
   "dependencies": {
