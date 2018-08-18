@@ -5,14 +5,17 @@ angular.module('video-player', [])
 
     this.changeVideo = (video) => {
       this.currentVideo = video;
+      console.log(this)
     };
     
-    this.searchResults = (e) => {
-      console.log(e)
-    };
+    this.searchResults = (message) => {
 
+      console.log(message);
+      // this.message = '';
+    }   
+    
     this.videos = exampleVideoData;
-    this.currentVideo = exampleVideoData[3];
+    this.currentVideo = exampleVideoData[0];
     
     console.log('init', this);
   }
