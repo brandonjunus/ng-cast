@@ -1,7 +1,6 @@
 <div class="search-bar form-inline">
-  <input class="form-control" type="text" ng-model="message"/>
+  <input class="form-control" type="text" ng-change="$ctrl.searchResults(message)" ng-model="message" ng-model-options="{ debounce: 1000 }" ng-keyup="$event.keyCode == 13 ? $ctrl.searchResults(message) : null"/>
   <button class="btn" ng-click = "$ctrl.searchResults(message)">
     <span class="glyphicon glyphicon-search"></span>
   </button>
-  <div>{{message}}</div>
 </div>

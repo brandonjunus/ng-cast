@@ -5,6 +5,4 @@ angular.module('video-player')
     videoList: '<'
   },
   templateUrl: 'src/templates/videoList.html',
-  controller: function($scope) {
-  }
 });

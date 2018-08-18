@@ -5,9 +5,5 @@ angular.module('video-player')
       currentVideo: '<',
       onClick: '<'
     },
-    controller: function($scope) {
-    
-      // this.url = () => ("https://www.youtube.com/embed/" + this.currentVideo.id.videoId);
-    },
     templateUrl: 'src/templates/videoPlayer.html'
   });
